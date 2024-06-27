@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Breezy | Contact</title>
+        <meta name="author" content="Braelyn Riddle">
+        <meta name="description" content="page about resort contact info for final project">
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Sail&display=swap" rel="stylesheet">    
+    
+        <!-- link stylesheet here-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html" aria-label="go to Breezy Homepage">Breezy</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" alt="mountain view from the valley">
+        </header>
+        <main>
+           <h2>Contact Us</h2>
+           <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!<br>
+            Required fields marked with a <span class="required">*</span>.</p>
+            <img src="images/swiss-peak.jpg" alt="view the peak of the mountain from the valley">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                
+                <label for="my-full-name">Full Name<span class="required">*</span></label>
+                <input type="text" name="my-full-name" id="my-full-name" required>
+
+                <label for="email-address">Email Address<span class="required">*</span></label>
+                <input type="text" name="email-address" id="email-address" required>
+
+                <label for="phone-number">Phone Number<span class="required">*</span></label>
+                <input type="tel" name="phone-number" id="phone-number" required>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email</label>
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+                <label for="my-comments">Comments</label>
+                <textarea name="my-comments" id="my-comments"></textarea>
+                
+                <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+            </form>
+        </main>
+        <footer>
+            <p>Copyright &copy;2024 - Breezy</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
